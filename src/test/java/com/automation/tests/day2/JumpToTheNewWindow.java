@@ -1,5 +1,4 @@
 package com.automation.tests.day2;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,7 +29,9 @@ public class JumpToTheNewWindow {
             }
         }
         System.out.println("AFTER SWITCH :"+driver.getCurrentUrl());
-        driver.close();
+        // break until 5:02
+//        driver.close();
+        driver.quit();
     }
     /**
      *
@@ -48,5 +49,3 @@ public class JumpToTheNewWindow {
         }
     }
 }
-
-
